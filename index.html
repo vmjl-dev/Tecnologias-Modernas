@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleprocesos Modernos - Protocolos y Tecnologías</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="author-info">
+                    <h1>Victor Jerez</h1>no
+                    <h2>Cédula: 28001871</h2>
+                </div>
+                <div class="course-info">
+                    <h3>Entorno De IA con Python y Node.js</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <aside class="table-of-contents">
+                <h3>Índice de Contenidos</h3>
+                <ul>
+                    <li><a href="#protocolos">1. Protocolos Modernos</a>
+                        <ul>
+                            <li><a href="#capa-aplicacion">1.1. Capa de Aplicación</a></li>
+                            <li><a href="#capa-transporte">1.2. Capa de Transporte</a></li>
+                            <li><a href="#capa-red">1.3. Capa de Red</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#medios">2. Medios de Transmisión</a>
+                        <ul>
+                            <li><a href="#medios-guiados">2.1. Medios Guiados</a></li>
+                            <li><a href="#medios-no-guiados">2.2. Medios No Guiados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#comparativa">3. Comparativa de Tecnologías</a></li>
+                    <li><a href="#conclusion">4. Conclusión</a></li>
+                </ul>
+            </aside>
+
+            <main class="content">
+                <h1>Teleprocesos en la Era Digital: Protocolos, Medios y Comparativa de Tecnologías</h1>
+
+                <section id="protocolos">
+                    <h2>2. Protocolos Modernos: El Lenguaje de la Comunicación Digital</h2>
+                    <p>Un protocolo es un conjunto de reglas y estándares que gobiernan el intercambio de información entre dos o más entidades. En los teleprocesos, los protocolos modernos se organizan en capas, siguiendo modelos como TCP/IP.</p>
+                    
+                    <div id="capa-aplicacion">
+                        <h3>2.1. Capa de Aplicación (Interacción Humana y Máquina-a-Máquina)</h3>
+                        <p>Estos son los protocolos más visibles para el usuario final y las aplicaciones.</p>
+                        
+                        <h4>HTTP/3 (Hypertext Transfer Protocol version 3)</h4>
+                        <p>La evolución del protocolo web por excelencia. Su mayor innovación es el uso de <strong>QUIC</strong> (Quick UDP Internet Connections), que se ejecuta sobre UDP en lugar de TCP. Esto reduce drásticamente la latencia al eliminar el "aperitú de mano" (handshake) de TCP y TLS en conexiones sucesivas, mejorando la experiencia en la web moderna.</p>
+                        
+                        <h4>MQTT (Message Queuing Telemetry Transport)</h4>
+                        <p>Un protocolo ligero de mensajería del tipo publicar/suscribir, ideal para IoT (Internet de las Cosas). Diseñado para dispositivos con recursos limitados y redes inestables, es el estándar para conectar sensores y actuadores a la nube.</p>
+                        
+                        <h4>gRPC (Google Remote Procedure Call)</h4>
+                        <p>Un marco moderno de llamada a procedimiento remoto (RPC) que usa HTTP/2 como transporte y <strong>Protocol Buffers</strong> (Protobuf) como formato de serialización. Es eficiente, rápido y es ideal para la comunicación entre microservicios en arquitecturas distribuidas.</p>
+                        
+                        <h4>WebSockets</h4>
+                        <p>Permite una comunicación bidireccional y persistente entre un cliente (como un navegador) y un servidor. Es fundamental para aplicaciones que requieren actualizaciones en tiempo real, como chats, dashboards financieros y juegos multijugador online.</p>
+                        
+                        <h4>REST/GraphQL</h4>
+                        <p>Aunque no son protocolos en sí mismos, son estilos de arquitectura para APIs que se sirven sobre HTTP. REST es ampliamente adoptado por su simplicidad, mientras que GraphQL ofrece mayor eficiencia al permitir al cliente solicitar exactamente los datos que necesita.</p>
+                    </div>
+                    
+                    <div id="capa-transporte">
+                        <h3>2.2. Capa de Transporte (Gestión de la Entrega de Datos)</h3>
+                        
+                        <h4>TCP (Transmission Control Protocol)</h4>
+                        <p>Sigue siendo el pilar de la confiabilidad. Proporciona entrega garantizada, control de flujo y control de congestión. Es la base de HTTP/1.1 y HTTP/2, SSH, FTP, y cualquier aplicación donde la integridad de los datos es crítica.</p>
+                        
+                        <h4>UDP (User Datagram Protocol)</h4>
+                        <p>Un protocolo sin conexión y más simple. No garantiza la entrega ni el orden, pero tiene una sobrecarga mínima. Es ideal para aplicaciones en tiempo real donde la velocidad es más importante que la perfección, como streaming de video (VoD), videollamadas (VoIP) y DNS. QUIC (y por ende HTTP/3) se construye sobre UDP.</p>
+                    </div>
+                    
+                    <div id="capa-red">
+                        <h3>2.3. Capa de Red (Direccionamiento y Enrutamiento)</h3>
+                        
+                        <h4>IPv6 (Internet Protocol version 6)</h4>
+                        <p>El sucesor de IPv4, diseñado para resolver la escasez de direcciones. Su espacio de direcciones de 128 bits es prácticamente ilimitado, lo que es crucial para el despliegue masivo de dispositivos IoT. Además, ofrece mejoras en seguridad (IPsec es una parte integral) y eficiencia en el enrutamiento.</p>
+                    </div>
+                </section>
+
+                <section id="medios">
+                    <h2>3. Medios de Transmisión: El "Cableado" del Mundo Moderno</h2>
+                    <p>El medio es el canal físico (o lógico) a través del cual viajan los datos.</p>
+                    
+                    <div id="medios-guiados">
+                        <h3>3.1. Medios Guiados (Cableados)</h3>
+                        
+                        <h4>Fibra Óptica</h4>
+                        <p>El rey indiscutible del ancho de banda y la distancia. Transmite pulsos de luz, siendo inmune a interferencias electromagnéticas. Es la columna vertebral de las redes troncales de Internet (backbones) y la base de tecnologías de acceso como <strong>FTTH (Fiber To The Home)</strong>.</p>
+                        <div class="highlight">
+                            <p><strong>Ventajas:</strong> Ancho de banda extremadamente alto (decenas de Tbps), baja atenuación, larga distancia, seguridad.</p>
+                            <p><strong>Desventajas:</strong> Costo de instalación y empalme, fragilidad.</p>
+                        </div>
+                        
+                        <h4>Par Trenzado (Cobre)</h4>
+                        <p><strong>UTP/FTP (Categoría 5e/6/6a/7):</strong> El estándar en redes de área local (LAN Ethernet). La categoría 6a puede soportar 10 Gbps hasta 100 metros. Es económico y fácil de instalar.</p>
+                        <p><strong>DSL (Línea de Abonado Digital):</strong> Usa el par trenzado telefónico existente. Tecnologías como VDSL2 permiten velocidades de hasta 100 Mbps, pero la distancia a la central telefónica es un factor limitante crítico.</p>
+                        
+                        <h4>Cable Coaxial</h4>
+                        <p>Tradicionalmente usado para televisión por cable, es la base de las conexiones de Internet por <strong>DOCSIS (Data Over Cable Service Interface Specification)</strong>. La versión DOCSIS 3.1 permite velocidades superiores a 1 Gbps, compitiendo con la fibra en muchas áreas.</p>
+                    </div>
+                    
+                    <div id="medios-no-guiados">
+                        <h3>3.2. Medios No Guiados (Inalámbricos)</h3>
+                        
+                        <h4>Radiofrecuencia (RF)</h4>
+                        <p><strong>Wi-Fi (IEEE 802.11):</strong> El estándar para redes de área local inalámbricas. Las versiones modernas son <strong>Wi-Fi 6 (802.11ax)</strong>, que mejora la eficiencia en entornos congestionados, y <strong>Wi-Fi 6E</strong>, que añade la banda de 6 GHz para más canales y menos interferencias.</p>
+                        
+                        <p><strong>5G NR (New Radio):</strong> La quinta generación de telefonía móvil. No solo ofrece mayor velocidad (hasta 20 Gbps en teoría), sino que se divide en tres escenarios clave:</p>
+                        <ul>
+                            <li><strong>eMBB (Mobile Broadband Enhance):</strong> Banda ancha móvil mejorada (video 4K/8K, RV/RA).</li>
+                            <li><strong>mMTC (Massive Machine Type Communications):</strong> Comunicaciones masivas entre máquinas (IoT de baja potencia).</li>
+                            <li><strong>URLLC (Ultra-Reliable Low-Latency Communications):</strong> Comunicaciones ultra confiables y de baja latencia (automoción autónoma, cirugía remota).</li>
+                        </ul>
+                        
+                        <p><strong>LoRaWAN y Sigfox:</strong> Protocolos para <strong>WAN de Área Amplia y Baja Potencia (LPWAN)</strong>. Están diseñados para dispositivos IoT que envían pequeños paquetes de datos de forma esporádica, con una batería que puede durar años.</p>
+                        
+                        <h4>Microondas y Ondas Milimétricas</h4>
+                        <p><strong>Enlaces Punto a Punto:</strong> Se usan para conectar edificios a largas distancias (varios kilómetros) donde tender fibra es inviable. Son cruciales para redes de backhaul en telecomunicaciones.</p>
+                        <p><strong>5G y WiGig (802.11ad/ay):</strong> Utilizan bandas de ondas milimétricas (por encima de 24 GHz) para alcanzar velocidades multi-gigabit en distancias cortas.</p>
+                        
+                        <h4>Óptica en Espacio Libre (FSO)</h4>
+                        <p>Similar a la fibra óptica, pero sin el cable. Usa haces de luz láser para transmitir datos a través del aire. Es útil para conexiones de alta velocidad entre edificios con línea de vista despejada, pero es sensible a las condiciones climáticas (niebla, lluvia).</p>
+                    </div>
+                </section>
+
+                <section id="comparativa">
+                    <h2>4. Comparativa de Tecnologías Actuales de Teleprocesos</h2>
+                    <p>La elección de la tecnología depende del caso de uso, considerando velocidad (ancho de banda), latencia, alcance, movilidad y costo.</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tecnología</th>
+                                <th>Medio Principal</th>
+                                <th>Velocidad Típica</th>
+                                <th>Latencia</th>
+                                <th>Alcance</th>
+                                <th>Movilidad</th>
+                                <th>Caso de Uso Principal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Fibra Óptica (FTTH)</strong></td>
+                                <td>Fibra Óptica</td>
+                                <td>100 Mbps - 10 Gbps</td>
+                                <td>Muy Baja (1-10 ms)</td>
+                                <td>Muy Largo (km)</td>
+                                <td>No</td>
+                                <td>Banda ancha fija de ultra alta velocidad, Backbones</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cable (DOCSIS 3.1)</strong></td>
+                                <td>Coaxial</td>
+                                <td>100 Mbps - 1 Gbps</td>
+                                <td>Baja (10-25 ms)</td>
+                                <td>Largo (km)</td>
+                                <td>No</td>
+                                <td>Banda ancha fija residencial y empresarial</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ethernet (Cobre)</strong></td>
+                                <td>Par Trenzado</td>
+                                <td>1 Gbps - 10 Gbps</td>
+                                <td>Muy Baja (&lt;1 ms)</td>
+                                <td>Corto (100m)</td>
+                                <td>No</td>
+                                <td>Redes de Área Local (LAN) en oficinas y centros de datos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wi-Fi 6/6E</strong></td>
+                                <td>Radio (2.4, 5, 6 GHz)</td>
+                                <td>500 Mbps - 2 Gbps*</td>
+                                <td>Baja (5-30 ms)</td>
+                                <td>Corto (50m)</td>
+                                <td>Sí</td>
+                                <td>Conectividad inalámbrica interna, dispositivos móviles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5G (Sub-6 GHz)</strong></td>
+                                <td>Radio (Sub-6 GHz)</td>
+                                <td>100 Mbps - 1 Gbps</td>
+                                <td>Media-Baja (20-40 ms)</td>
+                                <td>Medio (km)</td>
+                                <td>Sí</td>
+                                <td>Banda ancha móvil, IoT masivo, cobertura urbana</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5G (Ondas MmWave)</strong></td>
+                                <td>Radio (Ondas MmWave)</td>
+                                <td>1 Gbps - 4 Gbps+</td>
+                                <td>Muy Baja (5-10 ms)</td>
+                                <td>Muy Corto (200m)</td>
+                                <td>Sí</td>
+                                <td>Zonas de ultra densidad (estadios, aeropuertos)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LoRaWAN</strong></td>
+                                <td>Radio (Sub-GHz)</td>
+                                <td>0.3 - 50 kbps</td>
+                                <td>Muy Alta (segundos)</td>
+                                <td>Muy Largo (km)</td>
+                                <td>Sí</td>
+                                <td>IoT de baja potencia y largo alcance (agricultura, smart city)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Satélite (LEO - Starlink)</strong></td>
+                                <td>Radio (Microondas)</td>
+                                <td>50 - 200 Mbps</td>
+                                <td>Media-Alta (20-50 ms)</td>
+                                <td>Global</td>
+                                <td>Sí (limitada)</td>
+                                <td>Conectividad en zonas rurales y remotas, backhaul global</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><em>*Nota: Las velocidades inalámbricas son teóricas y dependen enormemente de la congestión, distancia y obstáculos.</em></p>
+                </section>
+
+                <section id="conclusion">
+                    <h2>5. Conclusión</h2>
+                    <p>El ecosistema de los teleprocesos modernos es una intrincada telaraña de tecnologías que se complementan. No existe una solución única. La tendencia es hacia la <strong>convergencia</strong>: las redes 5G se integran con núcleos de red basados en la nube y protocolos de Internet (como HTTP/3), mientras que las redes de fibra óptica actúan como la columna vertebral que soporta todo el tráfico.</p>
+                    <p>La elección entre un protocolo como MQTT frente a gRPC, o un medio como la fibra frente al 5G, dependerá de si se necesita monitorizar un sensor en un campo agrícola (baja potencia, largo alcance) o realizar una transacción financiera en milisegundos (alta confiabilidad, baja latencia). Comprender estas tecnologías, sus fortalezas y sus limitaciones es fundamental para diseñar e implementar los sistemas de teleprocesos que impulsarán la próxima ola de innovación digital.</p>
+                </section>
+
+                
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Unefa, Noviembre de 2025 - Teleprocesos</p>
+        </div>
+    </footer>
+
+    <script src="./.scripts.js">
+    </script>
+</body>
+</html>
