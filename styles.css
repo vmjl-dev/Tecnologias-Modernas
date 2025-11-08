@@ -1,12 +1,13 @@
 :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #3498db;
-            --light-color: #ecf0f1;
-            --dark-color: #1a252f;
-            --text-color: #333;
-            --border-color: #bdc3c7;
-        }
+  --primary-color: #1f2a38;       /* Azul grisáceo profundo */
+  --secondary-color: #2e3c4f;     /* Azul carbón */
+  --accent-color: #4a90e2;        /* Azul claro vibrante */
+  --light-color: #f5f7fa;         /* Gris muy claro, casi blanco */
+  --dark-color: #121820;          /* Azul negro */
+  --text-color: #222;             /* Gris oscuro para buena legibilidad */
+  --heading-color: #ffffff;       /* Blanco puro para títulos sobre fondo oscuro */
+  --border-color: #d1d5da;        /* Gris claro para bordes sutiles */
+}
         
         * {
             margin: 0;
@@ -236,3 +237,4 @@
                 margin-top: 15px;
             }
         }
+
